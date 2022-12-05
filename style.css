@@ -22,4 +22,103 @@ body {
   font-size: 1.5rem;
   font-family: "Overpass", sans-serif;
   font-weight: 400;
+}
+body main {
+  background: hsl(213deg, 19%, 18%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+body main .rate-card {
+  display: block;
+}
+body main .rating-star {
+  border-radius: 50%;
+  padding: 1.4rem;
+  background-color: hsl(213deg, 27%, 21%);
+}
+body main p, body main li {
+  color: hsl(216deg, 12%, 54%);
+}
+body main ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+body main ul button {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  cursor: pointer;
+  background: hsl(213deg, 27%, 21%);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+body main ul button:hover {
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+}
+body main .btn-active {
+  background-color: hsl(25deg, 97%, 53%);
+}
+body main button {
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+body main button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+body main .appreciate-card {
+  text-align: center;
+  display: none;
+}
+@media screen and (min-width: 375px) {
+  body main {
+    width: 300px;
+  }
+  body main h1 {
+    font-size: 2.2rem;
+  }
+  body main p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2.8rem;
+  }
+  body main button {
+    padding: 1.3rem 2rem;
+  }
+  body main .appreciate-card img {
+    width: 12rem;
+  }
+  body main .appreciate-card .appreciate-p {
+    color: hsl(25deg, 97%, 53%);
+    font-size: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    background-color: hsl(213deg, 27%, 21%);
+    border-radius: 50px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1.1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  body main {
+    width: 320px;
+  }
+  body main .appreciate-card .appreciate-p {
+    padding: 0.5rem 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
